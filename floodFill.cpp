@@ -31,7 +31,7 @@ vector<vector<int>> floodFill(vector<vector<int>> &image, int sr, int sc, int ne
 int main(){
     vector<vector<int>> mat={{1,1,1},{1,1,0},{1,0,1}};
     for(int i=0; i<mat.size(); i++){
-        for(int j=0; j<mat[0].size(); i++){
+        for(int j=0; j<mat[0].size(); j++){
             cout<<floodFill(mat, 0, 0, 9)[i][j]<<" ";
         }
     }

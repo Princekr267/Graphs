@@ -1,6 +1,7 @@
 #include<iostream>
 #include<vector>
 #include<list>
+#include<string>
 #include<queue>
 using namespace std;
 class Graph{
@@ -16,7 +17,7 @@ public:
     void addEdge(int u, int v){
         l[u].push_back(v);
         if(isUndirec){
-            l[v].push_back(v);
+            l[v].push_back(u);
         }
     }
 

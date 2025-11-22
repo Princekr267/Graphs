@@ -7,7 +7,7 @@ bool isCycle(int src, vector<bool> &vis, vector<bool> &rec, vector<vector<int>> 
 
     for(int i=0; i<graph.size(); i++){
         int u=graph[i][1];
-        int v=graph[1][0];
+        int v=graph[i][0];
         if(u==src){
             if(!vis[v]){
                 if(isCycle(v, vis, rec, graph)){
